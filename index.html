@@ -1,17 +1,114 @@
+
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <title>私のGitHub Pagesサイト</title>
-    <style>
-        /* ここにCSSを記述してもOKです */
-        body { font-family: sans-serif; margin: 40px; }
-        h1 { color: #336699; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>アランマーレ秋田ファンサイト</title>
+<style>
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  background-color: #fff;
+  color: #333;
+}
+header {
+  background-color: #F36C21; /* チームカラーオレンジ */
+  color: #fff;
+  text-align: center;
+  padding: 1.5rem;
+}
+nav {
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 1rem;
+}
+nav a:hover {
+  background-color: #F36C21;
+}
+.hero {
+  background: url('team-photo.jpg') center/cover no-repeat;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px #000;
+}
+section {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+h2 {
+  color: #F36C21;
+  border-bottom: 2px solid #F36C21;
+  padding-bottom: 0.5rem;
+}
+.player-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+.player-card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+}
+.player-card img {
+  width: 100%;
+  height: auto;
+}
+.player-card h3 {
+  margin: 0.5rem 0;
+  color: #F36C21;
+}
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+</style>
 </head>
 <body>
-    <h1>aranma-re の Webスペース</h1>
-    <p>GitHub Codespacesでタグ打ちを再開しました！</p>
-    <p>これから、どんどんコンテンツを追加していきます。</p>
+<header>
+  <h1>アランマーレ秋田ファンサイト</h1>
+</header>
+<nav>
+  #ホーム</a>
+  <a href="#">#試合情報</a>
+  #ギャラリー</a>
+</nav>
+<div class="hero">
+  アランマーレ秋田を応援しよう！
+</div>
+<section>
+  <h2>注目選手</h2>
+  <div class="player-grid">
+    <div class="player-card">
+      <img src="player  <h3>#7 長部沙梨奈</h3>
+      <p>ポジション：ガード</p>
+    </div>
+    <div class="player-card">
+      player2.jpg
+      <h3>#10 ○○○○</h3>
+      <p>ポジション：フォワード</p>
+    </div>
+    <!-- 他の選手カードを追加 -->
+  </div>
+</section>
+<footer>
+  © 2025 アランマーレ秋田ファンサイト（非公式）
+</footer>
 </body>
 </html>
