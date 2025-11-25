@@ -81,3 +81,23 @@ footer {
   text-align: center;
   padding: 1.5rem;
 }
+
+.player-grid {
+  grid-template-columns: 1fr 1fr 1fr; /* 3列（PC/デフォルト） */
+  gap: 1rem;
+}
+
+/* player-grid のレスポンシブ対応 */
+@media (max-width: 768px) {
+  .player-grid {
+    /* タブレット縦向き〜スマートフォン横向き（768px以下）では2列にする */
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .player-grid {
+    /* スマートフォン縦向き（480px以下）では1列にする */
+    grid-template-columns: 1fr;
+  }
+}
